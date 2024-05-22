@@ -13,7 +13,7 @@ const OfficerSchema = new mongoose.Schema(
         office: {
             type:String,limit:100
         },
-        status: { type: String, enum: ["active", "suspended", "relieved", "inactive"], required: true, default: "active" },
+        status: { type: String, enum: ["active", "suspended", "relieved", "inactive"], required: true, default: "inactive" },
         password: { type: String, required: [true ,'password is required']},
         refresh_token:{token:String}
     },
